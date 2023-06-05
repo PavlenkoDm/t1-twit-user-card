@@ -11,8 +11,7 @@ export const Filter = ({ options, filter }) => {
     };
 
     return (
-        <div>
-            <p>Show: </p>
+        <div className={style.container}>
             <div className={style.dropdown}>
                 <button
                     className={style.toggle}

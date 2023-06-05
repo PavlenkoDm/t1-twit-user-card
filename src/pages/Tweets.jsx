@@ -41,13 +41,14 @@ const Tweets = () => {
                 </Helmet>
                 <section>
                     <h1 style={{ display: 'none' }}>Tweets</h1>
-                    <div>
-                        <button type="button" onClick={() => navigate("/")}>Go Back</button>
+                    <div className={style.head}>
+                        <button className={style.Button} type="button" onClick={() => navigate("/")}>Go Back</button>
                         <Filter options={['All', 'Follow', 'Followings']} filter={getFilterValue} />
                     </div>
                     {users.length > 0 && (<TweetsList users={users} />)}                    
                     {users.length > 0 && users.length < 15 && (
                         <button
+                            className={style.Button}
                             type="button"
                             name="load-more"
                             onClick={handleOnLoadMore}

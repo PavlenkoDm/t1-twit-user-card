@@ -29,14 +29,10 @@ export const TweetCard = ({ options }) => {
     return (
         <li>
             <div className={style.card}>
-                <img src="../../svg/elements-comments.svg" alt="comments" />
-                <div>
-                    <img src="../../svg/rectangle.svg" alt="rectangle" />
-                    <img src="../../svg/circle.svg" alt="circle" />
-                </div>
-                <p>{options.tweets} TWEETS</p>
-                <p>{followersAm} FOLLOWERS</p>
-                <button
+                <p className={style.title}>{options.user}</p>
+                <p className={style.title}>{options.tweets} TWEETS</p>
+                <p className={style.title}>{followersAm} FOLLOWERS</p>
+                <button className={style.Button}
                     type="button"
                     name="toFollow"
                     onClick={handleFollowClick}
