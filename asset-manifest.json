@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/t1-twit-user-card/static/css/main.b4f89189.css",
+    "main.js": "/t1-twit-user-card/static/js/main.e1a8cbe3.js",
+    "index.html": "/t1-twit-user-card/index.html",
+    "main.b4f89189.css.map": "/t1-twit-user-card/static/css/main.b4f89189.css.map",
+    "main.e1a8cbe3.js.map": "/t1-twit-user-card/static/js/main.e1a8cbe3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4f89189.css",
+    "static/js/main.e1a8cbe3.js"
+  ]
+}
