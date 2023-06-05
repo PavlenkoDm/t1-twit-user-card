@@ -47,13 +47,21 @@ export const fetchUsers = async (page = 1, filter = 'All') => {
 };
 
 export const putchUserFollowing = async credentials => {
-    const { id, isFollowed } = credentials;
-    const data = JSON.stringify({ isFollowed: isFollowed });
+    const { id, tweets, followers, user, avatar, isFollowed } = credentials;
     try {
         Loading.circle();
-        const response = await axios.patch(
-            `/users/${id}`, { data }, { headers: { 'Content-Type': 'application/json' } }
-        );
+        const response = await axios({
+            url: `/users/${credentials.id}`,
+            method: 'put',
+            data: {
+                id: `${id}`,
+                tweets,
+                followers,
+                user,
+                avatar,
+                isFollowed
+            },
+        });
         return response.data;
     } catch (error) {
         Notify.failure(error.message);

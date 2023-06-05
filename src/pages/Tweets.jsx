@@ -33,8 +33,6 @@ const Tweets = () => {
         setFilter(value);
     };
 
-    console.log(users, pageNumber, filter);
-
     return (
         <div className={style.container}>
             <main>
