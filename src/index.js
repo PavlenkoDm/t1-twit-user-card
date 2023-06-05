@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     // <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename='/t1-twit-user-card'>
             <App />
         </BrowserRouter>
     // </React.StrictMode>
