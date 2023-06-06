@@ -46,7 +46,7 @@ const Tweets = () => {
                         <Filter options={['All', 'Follow', 'Followings']} filter={getFilterValue} />
                     </div>
                     {users.length > 0 && (<TweetsList users={users} />)}                    
-                    {users.length > 0 && users.length < 15 && (
+                    {users.length > 0 && users.length < 14 && (
                         <button
                             className={style.Button}
                             type="button"
